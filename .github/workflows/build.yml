@@ -1,0 +1,20 @@
+name: Build App
+on: [push]
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+      - name: Install dependencies
+        run: npm install
+      - name: Build project
+        run: npx expo export
+      - name: Upload Files
+        uses: actions/upload-artifact@v4
+        with:
+          name: malika-vault-files
+          path: dist/
+          
