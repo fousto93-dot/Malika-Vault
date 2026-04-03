@@ -1,18 +1,16 @@
-name: Build APK Final
-on: [push]
-jobs:
-  build:
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v4
-      - uses: actions/setup-node@v4
-        with:
-          node-version: 20
-      - name: Install EAS CLI
-        run: npm install -g eas-cli
-      - name: Install dependencies
-        run: npm install
-      - name: Build APK
-        run: npx eas build --platform android --profile preview --non-interactive
-        env:
-          EXPO_TOKEN: ${{ secrets.EXPO_TOKEN }}
+{
+  "expo": {
+    "name": "Malika-Vault",
+    "slug": "Malika-Vault",
+    "version": "1.0.0",
+    "owner": "fousto9",
+    "extra": {
+      "eas": {
+        "projectId": "7159ddb4-3a5d-4fdb-8548-9a30b088c4b6"
+      }
+    },
+    "android": {
+      "package": "com.fousto9.malikavault"
+    }
+  }
+}
