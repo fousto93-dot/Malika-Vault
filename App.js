@@ -3,36 +3,14 @@
     "name": "Malika-Vault",
     "slug": "Malika-Vault",
     "version": "1.0.0",
-    "orientation": "portrait",
-    "icon": "./assets/icon.png",
-    "userInterfaceStyle": "light",
-    "splash": {
-      "image": "./assets/splash.png",
-      "resizeMode": "contain",
-      "backgroundColor": "#ffffff"
-    },
-    "assetBundlePatterns": [
-      "**/*"
-    ],
-    "ios": {
-      "supportsTablet": true
-    },
-    "android": {
-      "adaptiveIcon": {
-        "foregroundImage": "./assets/adaptive-icon.png",
-        "backgroundColor": "#ffffff"
-      },
-      "package": "com.fousto93.malikavault"
-    },
-    "web": {
-      "favicon": "./assets/favicon.png"
-    },
+    "owner": "fousto9",
     "extra": {
       "eas": {
-        "projectId": "8da8c18f-7647-4972-8874-8d4512e0938b"
+        "projectId": "7159ddb4-3a5d-4fdb-8548-9a30b088c4b6"
       }
     },
-    "owner": "fousto93-dot"
+    "android": {
+      "package": "com.fousto9.malikavault"
+    }
   }
-        }
-          
+}
