@@ -1,16 +1,15 @@
-{
-  "expo": {
-    "name": "Malika-Vault",
-    "slug": "Malika-Vault",
-    "version": "1.0.0",
-    "owner": "fousto9",
-    "extra": {
-      "eas": {
-        "projectId": "7159ddb4-3a5d-4fdb-8548-9a30b088c4b6"
-      }
-    },
-    "android": {
-      "package": "com.fousto9.malikavault"
-    }
-  }
+import React from 'react';
+import { View, Text, StyleSheet } from 'react-native';
+
+export default function App() {
+  return (
+    <View style={styles.container}>
+      <Text style={{fontSize: 20}}>Malika Vault is Ready!</Text>
+    </View>
+  );
 }
+
+const styles = StyleSheet.create({
+  container: { flex: 1, justifyContent: 'center', alignItems: 'center', backgroundColor: '#fff' },
+});
+    
