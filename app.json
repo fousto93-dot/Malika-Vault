@@ -1,15 +1,16 @@
-import React from 'react';
-import { View, Text, StyleSheet } from 'react-native';
-
-export default function App() {
-  return (
-    <View style={styles.container}>
-      <Text style={styles.text}>🛡️ Malika Vault is Ready!</Text>
-    </View>
-  );
+{
+  "expo": {
+    "name": "Malika-Vault",
+    "slug": "Malika-Vault",
+    "version": "1.0.0",
+    "owner": "fousto93-dot",
+    "extra": {
+      "eas": {
+        "projectId": "8da8c18f-7647-4972-8874-8d4512e0938b"
+      }
+    },
+    "android": {
+      "package": "com.fousto93.malikavault"
+    }
+  }
 }
-
-const styles = StyleSheet.create({
-  container: { flex: 1, justifyContent: 'center', alignItems: 'center', backgroundColor: '#000' },
-  text: { color: '#fff', fontSize: 22, fontWeight: 'bold' }
-});
